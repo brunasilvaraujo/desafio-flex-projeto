@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - align self</title>
+
+    <style>
+        .flex-container{
+            max-width: 350px;
+            border: 1px solid black;
+            margin-bottom: 10px;
+            display: flex;
+        }
+
+        .item{
+            background-color: brown;
+            color: white;
+            font-size: 24px;
+            text-align: center;
+            margin: 5px;
+        }
+
+        .align-container{
+            align-items: center;
+        }
+
+        .center{
+            align-self: center;
+        }
+
+        .start{
+            align-self: flex-start;
+        }
+
+        .end{
+            align-self: flex-end;
+        }
+
+        .baseline{
+            align-self: baseline;
+        }
+
+        .stretch{
+            align-self: stretch;
+        }
+
+        .auto{
+            align-self: auto;
+        }
+
+        .diretion{
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body> 
+    <h1>Row</h1>
+    <p>Align - self : auto</p>
+    <section class="flex-container align-container">
+        <div class="item auto">AAA</div>
+        <div class="item auto">123</div>
+        <div class="item auto">Lorem ipsum dolor sit </div>
+        <div class="item auto">ITEM 4</div>
+    </section>
+    <section class="flex-container">
+        <div class="item center">AAA</div>
+        <div class="item start">123</div>
+        <div class="item stretch">Lorem ipsum dolor sit </div>
+        <div class="item end">ITEM 4</div>
+    </section>
+    <section class="flex-container">
+        <div class="item center">AAA</div>
+        <div class="item start">AAAAAAAA</div>
+        <div class="item end">AAAAAAAAAAAA</div>
+        <div class="item center">Lorem ipsum dolor sit</div>
+    </section>
+    <h1>Colunm</h1>
+    <section class="flex-container diretion">
+        <div class="item auto">AAA</div>
+        <div class="item auto">123</div>
+        <div class="item auto">Lorem ipsum dolor sit </div>
+        <div class="item auto">ITEM 4</div>
+    </section>
+    <section class="flex-container diretion">
+        <div class="item center">AAA</div>
+        <div class="item start">123</div>
+        <div class="item stretch">Lorem ipsum dolor sit </div>
+        <div class="item end">ITEM 4</div>
+    </section>
+    <section class="flex-container diretion">
+        <div class="item center">AAA</div>
+        <div class="item start">AAAAAAAA</div>
+        <div class="item end">AAAAAAAAAAAA</div>
+        <div class="item center">Lorem ipsum dolor sit amet</div>
+    </section>
+</body>
+</html>

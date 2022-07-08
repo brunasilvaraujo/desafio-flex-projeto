@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - align content</title>
+
+    <style>
+        .container{
+            height: 400px;
+            max-width: 300px;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            border: 1px solid black;
+        }
+
+        .item{
+            background-color: orangered;
+            padding: 0 5px;
+            margin: 5px;
+            flex: 1;
+            text-align: center;
+            color: white;
+        }
+        .stretch{
+            align-content: stretch;
+        }
+
+        .center{
+            align-content: center;
+        }
+
+        .flex-start{
+            align-content: flex-start;
+        }
+
+        .flex-end{
+            align-content: flex-end;
+        }
+
+        .space-around{
+            align-content: space-around;
+        }
+
+        .space-between{
+            align-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <p>Stretch</p>
+    <div class="container stretch">
+        <div class="item">Primera semana.</div>
+        <div class="item">Para todos os garatos que amei.</div>
+        <div class="item">Divertidamente 2</div>
+        <div class="item">Foi bem legal começar esse boodcamp na DIO.</div>
+        <div class="item">Foi bem legal começar esse boodcamp.</div>
+        <div class="item">Venha para cá também.</div>
+        <div class="item">Dormir faz bem</div>
+    </div>
+    <p>Center</p>
+    <div class="container center">
+        <div class="item">Primera semana.</div>
+        <div class="item">Para todos os garatos que amei.</div>
+        <div class="item">Divertidamente 2</div>
+        <div class="item">Foi bem legal começar esse boodcamp na DIO.</div>
+        <div class="item">Foi bem legal começar esse boodcamp.</div>
+        <div class="item">Venha para cá também.</div>
+        <div class="item">Dormir faz bem</div>
+    </div>
+    <p>Flex-start</p>
+    <div class="container flex-start">
+        <div class="item">Primera semana.</div>
+        <div class="item">Para todos os garatos que amei.</div>
+        <div class="item">Divertidamente 2</div>
+        <div class="item">Foi bem legal começar esse boodcamp na DIO.</div>
+        <div class="item">Foi bem legal começar esse boodcamp.</div>
+        <div class="item">Venha para cá também.</div>
+        <div class="item">Dormir faz bem</div>
+    </div>
+    <p>Flex-end</p>
+    <div class="container flex-end">
+        <div class="item">Primera semana.</div>
+        <div class="item">Para todos os garatos que amei.</div>
+        <div class="item">Divertidamente 2</div>
+        <div class="item">Foi bem legal começar esse boodcamp na DIO.</div>
+        <div class="item">Foi bem legal começar esse boodcamp.</div>
+        <div class="item">Venha para cá também.</div>
+        <div class="item">Dormir faz bem</div>
+    </div>
+    <p>Space-around</p>
+    <div class="container space-around">
+        <div class="item">Primera semana.</div>
+        <div class="item">Para todos os garatos que amei.</div>
+        <div class="item">Divertidamente 2</div>
+        <div class="item">Foi bem legal começar esse boodcamp na DIO.</div>
+        <div class="item">Foi bem legal começar esse boodcamp.</div>
+        <div class="item">Venha para cá também.</div>
+        <div class="item">Dormir faz bem</div>
+    </div>
+    <p>Space-between</p>
+    <div class="container space-between">
+        <div class="item">Primera semana.</div>
+        <div class="item">Para todos os garatos que amei.</div>
+        <div class="item">Divertidamente 2</div>
+        <div class="item">Foi bem legal começar esse boodcamp na DIO.</div>
+        <div class="item">Foi bem legal começar esse boodcamp.</div>
+        <div class="item">Venha para cá também.</div>
+        <div class="item">Dormir faz bem</div>
+    </div>
+</body>
+</html>
